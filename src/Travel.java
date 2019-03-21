@@ -1,9 +1,9 @@
 
 public class Travel {
 	
-	String travelID;
-	String destination;
-	int week; 
+	private String travelID;
+	private String destination;
+	private int week; 
 	
 	public void setTravelID(String travelID) {
 		this.travelID = travelID;
