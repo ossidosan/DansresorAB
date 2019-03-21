@@ -5,6 +5,14 @@ public class Agent {
 	private String name;
 	private String phoneNumber; 
 	private String destination; 
+	private Travel travelOwner;
+	
+	public Agent(String AgentID, String name, String phoneNumber, String destination) {
+		this.setAgentID(AgentID);
+		this.setName(name);
+		this.setPhoneNumber(phoneNumber);
+		this.setDestination(destination);
+	}
 	
 	public String getAgentID() {
 		return agentID;
@@ -29,6 +37,12 @@ public class Agent {
 	}
 	public void setDestination (String destination) {
 		this.destination = destination;
+	}
+	public Travel getTravelOwner() {
+		return travelOwner;
+	}
+	public void setTravelOwner(Travel travelOwner) {
+		this.travelOwner = travelOwner;
 	}
 
 
