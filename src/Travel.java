@@ -1,10 +1,10 @@
-import java.util.ArrayList;
 
 public class Travel {
 	
 	private String travelID;
 	private String destination;
 	private int week; 
+	private TravelGuide travelGuideOwner;
 	
 	public void setTravelID(String travelID) {
 		this.travelID = travelID;
@@ -24,9 +24,10 @@ public class Travel {
 	public int getWeek() {
 		return week;
 	}
-	public TravelGuide showAvailableTravelGuides(int week) {
-		
-			
-		}
+	public TravelGuide getTravelGuideOwner() {
+		return travelGuideOwner;
 	}
-
+	public void setTravelGuideOwner(TravelGuide travelGuideOwner) {
+		this.travelGuideOwner = travelGuideOwner; 
+	}
+}
