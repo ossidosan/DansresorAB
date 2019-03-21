@@ -1,5 +1,11 @@
 public class Travel {
 	
+	public TravelGuide getTravelGuideOwner() {
+		return travelGuideOwner;
+	}
+	public void setTravelGuideOwner(TravelGuide travelGuideOwner) {
+		this.travelGuideOwner = travelGuideOwner;
+	}
 	private String travelID;
 	private String destination;
 	private int week; 
@@ -23,3 +29,4 @@ public class Travel {
 	public int getWeek() {
 		return week;
 	}
+}
