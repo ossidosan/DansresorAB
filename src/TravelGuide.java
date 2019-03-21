@@ -5,6 +5,7 @@ public class TravelGuide {
 	private String name;
 	private String phoneNumber;
 	private String status;
+	private Travel travelOwner;
 	
 	public void setTravelGuideID (String travelGuideID) {
 		this.travelGuideID = travelGuideID;
@@ -38,6 +39,12 @@ public class TravelGuide {
 		this.status = status;
 	}
 	
+	public Travel getTravelOwner() {
+		return travelOwner;		
+	}
+	public void setTravelOwner(Travel travelOwner) {
+		this.travelOwner = travelOwner;
+	}
 	
 
 }
