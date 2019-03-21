@@ -25,7 +25,11 @@ public class Travel {
 		return week;
 	}
 	public TravelGuide showAvailableTravelGuides(int week) {
-		
+		for(TravelGuide tmp: travelGuideRegister) {
+			if(tmp.getTravelGuideID().equals(tmp.getTravelGuideID()){
+				return tmp;
+			}
+		}
 			
 		}
 	}
