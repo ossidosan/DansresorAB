@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Travel {
 	
@@ -23,4 +24,9 @@ public class Travel {
 	public int getWeek() {
 		return week;
 	}
-}
+	public TravelGuide showAvailableTravelGuides(int week) {
+		
+			
+		}
+	}
+
