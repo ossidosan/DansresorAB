@@ -1,4 +1,3 @@
-
 public class Travel {
 	
 	private String travelID;
@@ -24,10 +23,3 @@ public class Travel {
 	public int getWeek() {
 		return week;
 	}
-	public TravelGuide getTravelGuideOwner() {
-		return travelGuideOwner;
-	}
-	public void setTravelGuideOwner(TravelGuide travelGuideOwner) {
-		this.travelGuideOwner = travelGuideOwner; 
-	}
-}
