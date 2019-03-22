@@ -21,8 +21,8 @@ public class AgentRegister {
 			if(tmp.getAgentID().equals(agentID)) {
 			return tmp;
 		}
-		
+	
 	}
-		return null;
+			return null;
 	}	
 }

@@ -33,7 +33,7 @@ public class TestClass {
 			}
 		}
 		
-		System.out.println("Following travel guides are available for the travel:");
+		System.out.println("\nFollowing travel guides are available for the travel:");
 		for(TravelGuide tmpTravelGuide: tgr.getTravelGuideList()) {
 			if(tmpTravelGuide.getWeek() != 42) { //Fill in week for travel
 				System.out.println("Name: " + tmpTravelGuide.getName() + ", Travel Guide id: " + tmpTravelGuide.getTravelGuideID());
@@ -43,7 +43,14 @@ public class TestClass {
 		
 		t1.setAgentOwner(ag.findAgent("123")); //set an Agent to a travel with AgentID
 		t1.setTravelGuideOwner(tgr.findTravelGuide("345"));// set a travel guide to a travel with travelGuideID
-		System.out.println("Name: " + t1.getAgentOwner().getName() + " " + t1.getTravelGuideOwner().getName());
+		tr.createTravel(t1); //Create travel
+		tr.showTravel("T10000"); // Show travel information
+		
+		
+	
+		
+		
+		
 		
 		
 		
