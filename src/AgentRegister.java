@@ -25,4 +25,12 @@ public class AgentRegister {
 	}
 			return null;
 	}	
+	public void showAvailableAgents(String destination) {
+		System.out.println("\nFollowing agents are available for you travel:");
+		for(Agent tmpAgent: agentList) {
+			if(tmpAgent.getDestination().equals(destination)){
+				System.out.println("Name: " + tmpAgent.getName() + ", Agent id: " + tmpAgent.getAgentID());
+			} 	
+		}
+	}
 }

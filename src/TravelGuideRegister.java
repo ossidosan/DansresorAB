@@ -9,7 +9,7 @@ public class TravelGuideRegister {
 	}
 
 	public void setTravelGuideList(ArrayList<TravelGuide> travelGuideList) {
-		travelGuideList = travelGuideList;
+		this.travelGuideList = travelGuideList;
 	}
 	
 	public void addTravelGuide (TravelGuide travelGuide) {
@@ -23,6 +23,15 @@ public class TravelGuideRegister {
 			}
 		}
 		return null;
+	}
+	
+	public void showAvailableTravelGuides(int week) {
+		System.out.println("\nFollowing travel guides are available for the travel:");
+			for(TravelGuide tmpTravelGuide: travelGuideList) {
+				if(tmpTravelGuide.getWeek() != week) {
+					System.out.println("Name: " + tmpTravelGuide.getName() + ", Travel Guide id: " + tmpTravelGuide.getTravelGuideID());
+				}
+			}
 	}
 
 	
